@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none !important;
+    color: currentColor !important;
+}
+
+[class^='col']{
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.container__sm{
+    max-width: 975px !important;
+    margin: 0auto !important;
+}
+
+.container__lg{
+    max-width: 1143px !important;
+    margin: 0auto !important;
+}
+
+/*****************/
+
+.main-header{
+    background-color: #2C3E50;
+    color: white;
+    text-size-adjust: capitalize;
+}
+
+.nav-list{
+    display: flex;
+    gap: 30px;
+}
+
+.hero{
+    padding: 70px 0;
+    background-color: #1ABC9C;
+}
+
+.avatar{
+    width: 228px;
+}
+
+/*****************/
+
+.portfolio{
+    padding: 70px 0;
+}
+
+/*****************/
+
+.about{
+    padding: 70px 0;
+    background-color: #1ABC9C;
+}
+
+/*****************/
+
+.contact{
+    padding: 70px 0;
+}
+
+/*****************/
+
+.info{
+    padding: 70px 0;
+    background-color: #3A546D;
+}
+
+.copyright{
+    padding: 70px 0;
+    background-color: #2C3E50;
+}
