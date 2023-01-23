@@ -13,10 +13,19 @@ a{
     color: currentColor !important;
 }
 
-[class^='col']{
+/*[class^='col']{
     padding: 10px;
     border: 2px solid black;
 }
+
+main [class*='col']:not(.row)::before,
+footer [class*='col']:not(.row)::before {
+	content: 'content';
+	display: block;
+	border: 2px solid currentColor;
+	border-radius: 5px;
+	padding: 30px;
+}*/
 
 .container__sm{
     max-width: 975px !important;
@@ -44,10 +53,36 @@ a{
 .hero{
     padding: 70px 0;
     background-color: #1ABC9C;
+    color: white;
 }
 
 .avatar{
     width: 228px;
+}
+
+.star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    height: 3px;
+    background-color: white;
+    width: 10%;
+}
+
+.icon__star{
+    padding: 0 15px;
+    font-size: 25px;
+}
+
+.hero .subtitle{
+    font-size: 20px;
+}
+
+.hero .title{
+    font-size: 60px;
 }
 
 /*****************/
@@ -56,11 +91,40 @@ a{
     padding: 70px 0;
 }
 
+.portfolio .line{
+    background-color: black;
+}
+
+.portfolio .title{
+    font-size: 45px;
+}
+
+.portfolio img{
+    border-radius: 20px
+}
+
 /*****************/
 
 .about{
     padding: 70px 0;
     background-color: #1ABC9C;
+    color: white;
+}
+
+.about .title{
+    font-size: 45px;
+}
+
+.about .description{
+    font-size: 20px;
+}
+
+.about .button{
+    color: currentColor;
+}
+
+.download{
+    padding-right: 5px;
 }
 
 /*****************/
@@ -68,6 +132,15 @@ a{
 .contact{
     padding: 70px 0;
 }
+
+.contact .line{
+    background-color: black;
+}
+
+.contact .title{
+    font-size: 45px;
+}
+
 
 /*****************/
 
